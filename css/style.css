@@ -1,0 +1,47 @@
+.box{
+    width: 500px;
+    height: 400px;
+    background: grey;
+    position: fixed;
+    top: 0px;
+    left: -360px;
+}
+.box:hover{
+    position: absolute;
+    left: 0px;
+    .title{
+        visibility: hidden;
+    }
+}
+.title{
+    color: white;
+    text-align: center;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+.link{
+    color: white;
+    font-size: 30px;
+}
+.link:hover{
+    color: blue;
+}
+.link::before{
+content: "";
+display: inline-flex;
+width: 20px;
+height: 20px;
+background: blue;
+margin-right: 20px;
+transform: rotate(45deg);
+}
+.list{
+    position: absolute;
+    top: 30px;
+    left: 175px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
